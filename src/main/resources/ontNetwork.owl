@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/anast/ontologies/2020/3/untitled-ontology-82"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/anast/ontologies/2020/3/untitled-ontology-82">
+    <Prefix name="" IRI="http://www.semanticweb.org/anast/ontologies/2020/3/untitled-ontology-82"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Breakers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detectors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConnection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDetectors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProtection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#state"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Br8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detector8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Line_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Line_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Line_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Line_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RP_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RP_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RZ_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RZ_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TP_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TP_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TP_3"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Breakers"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detectors"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Line"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protection"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RP"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TP"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breakers"/>
+        <NamedIndividual IRI="#Br8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detectors"/>
+        <NamedIndividual IRI="#Detector8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Line"/>
+        <NamedIndividual IRI="#Line_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Line"/>
+        <NamedIndividual IRI="#Line_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Line"/>
+        <NamedIndividual IRI="#Line_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Line"/>
+        <NamedIndividual IRI="#Line_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RP"/>
+        <NamedIndividual IRI="#RP_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RP"/>
+        <NamedIndividual IRI="#RP_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protection"/>
+        <NamedIndividual IRI="#RZ_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protection"/>
+        <NamedIndividual IRI="#RZ_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TP"/>
+        <NamedIndividual IRI="#TP_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TP"/>
+        <NamedIndividual IRI="#TP_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TP"/>
+        <NamedIndividual IRI="#TP_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_1"/>
+        <NamedIndividual IRI="#Br1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_1"/>
+        <NamedIndividual IRI="#Br2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_1"/>
+        <NamedIndividual IRI="#Detector1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_1"/>
+        <NamedIndividual IRI="#Detector2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_2"/>
+        <NamedIndividual IRI="#Br3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_2"/>
+        <NamedIndividual IRI="#Br4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_2"/>
+        <NamedIndividual IRI="#Detector3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_2"/>
+        <NamedIndividual IRI="#Detector4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_3"/>
+        <NamedIndividual IRI="#Br5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_3"/>
+        <NamedIndividual IRI="#Br6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_3"/>
+        <NamedIndividual IRI="#Detector5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_3"/>
+        <NamedIndividual IRI="#Detector6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_4"/>
+        <NamedIndividual IRI="#Br7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#Line_4"/>
+        <NamedIndividual IRI="#Br8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_4"/>
+        <NamedIndividual IRI="#Detector7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#Line_4"/>
+        <NamedIndividual IRI="#Detector8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <NamedIndividual IRI="#Br1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <NamedIndividual IRI="#TP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <NamedIndividual IRI="#Detector1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <NamedIndividual IRI="#Line_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProtection"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <NamedIndividual IRI="#RZ_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <NamedIndividual IRI="#Br8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <NamedIndividual IRI="#TP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <NamedIndividual IRI="#Detector8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <NamedIndividual IRI="#Line_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProtection"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <NamedIndividual IRI="#RZ_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Br2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Br3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#RP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#TP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Detector2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Detector3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Line_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <NamedIndividual IRI="#Line_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Br4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Br5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#TP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#TP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Detector4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Detector5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Line_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <NamedIndividual IRI="#Line_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Br6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreaker"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Br7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#RP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasConnection"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#TP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Detector6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDetectors"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Detector7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Line_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLine"/>
+        <NamedIndividual IRI="#TP_3"/>
+        <NamedIndividual IRI="#Line_4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#state"/>
+        <NamedIndividual IRI="#Br8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
