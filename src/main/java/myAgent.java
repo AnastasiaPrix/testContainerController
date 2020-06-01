@@ -18,14 +18,31 @@ import java.util.*;
 
 public class myAgent extends Agent {
     private DFAgentDescription[] agents;
-    private boolean doneB=false;
+    private boolean needPower = false;
     private  boolean state;
+    private boolean haveEnergy;
     private Map<String, String> linksMap = new HashMap<>();
     private Map<String, String> mapLinksBreaker = new HashMap<>();
     private List<String> listLinks = new ArrayList<>();
     private Map<String, Boolean> stateOfBreakers = new HashMap<>();
     private List<String> listAgent = new ArrayList<>();
+    private List<String> breakersForComm = new ArrayList<>();
 
+    public List<String> getBreakersForComm() {
+        return breakersForComm;
+    }
+
+    public void setBreakersForComm(List<String> breakersForComm) {
+        this.breakersForComm = breakersForComm;
+    }
+
+    public boolean isNeedPower() {
+        return needPower;
+    }
+
+    public void setNeedPower(boolean needPower) {
+        this.needPower = needPower;
+    }
 
     public void setup() {
         try {
@@ -51,6 +68,7 @@ public class myAgent extends Agent {
         try {
             l = new loadOntology();
             this.stateOfBreakers = l.getВreakersState(getLocalName());
+            this.haveEnergy = l.getAgentPower(getLocalName());
             for ( String i: l.getLinksForAgent(getLocalName())){
                 this.listLinks.add(i);
                 for (String s : l.getBreakerForLinks(i)){
@@ -60,14 +78,17 @@ public class myAgent extends Agent {
                 }
             }
 
-
-
         } catch (OWLOntologyCreationException e) {
             e.printStackTrace();
         }
-        
+        for ( String b: stateOfBreakers.keySet()){
+            if (stateOfBreakers.get(b)){
+                breakersForComm.add(b);
+            }
+        }
         for (Map.Entry m :stateOfBreakers.entrySet() ){
             System.out.println("Hello. My name is "+getLocalName() +"  "+ m.getKey()+ "_ " +m.getValue());
+
         }
         String[] agentList = null;
         DataStore ds = new DataStore();
@@ -123,6 +144,14 @@ public class myAgent extends Agent {
 
     public void setListAgent(List<String> listAgent) {
         this.listAgent = listAgent;
+    }
+
+    public boolean isHaveEnergy() {
+        return haveEnergy;
+    }
+
+    public void setHaveEnergy(boolean haveEnergy) {
+        this.haveEnergy = haveEnergy;
     }
 }
 

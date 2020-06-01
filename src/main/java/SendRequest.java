@@ -28,6 +28,7 @@ public class SendRequest extends Behaviour {
 
     @Override
     public boolean done() {
+        agent.addBehaviour(new WaitForLocalizationKz(agent));
         return doneB;
     }
 }

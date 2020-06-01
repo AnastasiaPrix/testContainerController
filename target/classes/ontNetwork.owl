@@ -49,6 +49,9 @@
         <ObjectProperty IRI="#hasProtection"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasEnergy"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#state"/>
     </Declaration>
     <Declaration>
@@ -517,7 +520,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#state"/>
         <NamedIndividual IRI="#Br1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#state"/>
@@ -552,6 +555,31 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#state"/>
         <NamedIndividual IRI="#Br8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnergy"/>
+        <NamedIndividual IRI="#RP_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnergy"/>
+        <NamedIndividual IRI="#RP_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnergy"/>
+        <NamedIndividual IRI="#TP_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnergy"/>
+        <NamedIndividual IRI="#TP_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEnergy"/>
+        <NamedIndividual IRI="#TP_3"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
     </DataPropertyAssertion>
 </Ontology>

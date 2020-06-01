@@ -72,6 +72,21 @@ public class loadOntology {
         }
         return listOfBreaker;
     }
+    public boolean getAgentPower(String Name){
+        boolean listOfPower=false;
+        OWLNamedIndividual ind = df.getOWLNamedIndividual(IRI.create(ns+Name));
+        OWLDataProperty hasEnergy = df.getOWLDataProperty(IRI.create(ns+"hasEnergy"));
+        Collection<OWLLiteral> linksCollection = getDataFromOntology.getDataPropertyValue(ind,ontology,hasEnergy);
+        for (OWLLiteral i: linksCollection){
+            if (i.parseInteger()==0){
+               listOfPower = false;
+            }
+            else{
+                listOfPower=true;
+            }
+        }
+        return listOfPower;
+    }
 
     public  Map<String,Boolean> getВreakersState(String AgentName){
         Map<String,Boolean> stateOfBreakers = new HashMap<>();

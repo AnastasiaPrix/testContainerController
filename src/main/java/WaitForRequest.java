@@ -24,7 +24,7 @@ public class WaitForRequest extends Behaviour {
                 if (agent.isState()) {
                     agent.addBehaviour(new SendRequest(agent, msg.getSender().getLocalName()));
                     sender= msg.getSender().getLocalName();
-                } else {
+                } else  {
                     agent.addBehaviour(new SendInformationAboutKz(agent,msg.getSender().getLocalName()));
                     agent.addBehaviour(new turnOffBreaker(agent, msg.getSender().getLocalName()));
                 }

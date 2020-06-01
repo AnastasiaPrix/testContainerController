@@ -42,12 +42,13 @@ public class checkParams extends OneShotBehaviour {
         if (agent.getLocalName().contains("R") && comtrade.isTrip()){
             System.out.println("I'm "+ agent.getLocalName()+ " find KZ turn of ");
             agent.addBehaviour(new SendRequest(agent,null));
-            agent.addBehaviour(new WaitForLocalizationKz(agent));
         }
         else if (agent.getLocalName().contains("T")) {
             agent.addBehaviour(new WaitForRequest(agent));
         }
-        agent.addBehaviour(new CheckPower(agent));
+        agent.addBehaviour(new WaitForTurnOn(agent));
+       // agent.addBehaviour(new CheckPower(agent));
+     //   agent.addBehaviour(new needPower(agent));
         return super.onEnd();
     }
 }
