@@ -42,6 +42,7 @@ public class WaitForLocalizationKz extends Behaviour {
         }
         agent.send(msg2);
         agent.addBehaviour(new WaitForPowerRequest(agent));
+        agent.addBehaviour(new CheckPower(agent));
         return super.onEnd();
     }
 

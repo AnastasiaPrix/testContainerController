@@ -23,21 +23,24 @@ public class CheckPower extends Behaviour {
 
     @Override
     public void onStart() {
-        ACLMessage msg = new ACLMessage(ACLMessage.REQUEST);
-        msg.setProtocol("doHaveEnergy");
-        msg.setContent(agent.getLocalName());
-        for (String s: agent.getListAgent()){
-            if (!agent.getStateOfBreakers().get(agent.getMapLinksBreaker().get(agent.getLinksMap().get(s)))) {
-                msg.addReceiver(new AID(s, false));
-                kR++;
+        if (!agent.isHaveEnergy()){
+            ACLMessage msg = new ACLMessage(ACLMessage.REQUEST);
+            msg.setProtocol("doHaveEnergy");
+            msg.setContent(agent.getLocalName());
+            for (String s : agent.getListAgent()) {
+                if (!agent.getStateOfBreakers().get(agent.getMapLinksBreaker().get(agent.getLinksMap().get(s)))) {
+                    msg.addReceiver(new AID(s, false));
+                    kR++;
+                }
             }
+            agent.send(msg);
         }
-        agent.send(msg);
         super.onStart();
     }
 
     @Override
     public void action() {
+
         MessageTemplate mt = MessageTemplate.or(MessageTemplate.MatchPerformative(ACLMessage.DISCONFIRM),
                 MessageTemplate.and(MessageTemplate.MatchPerformative(ACLMessage.CONFIRM),
                         MessageTemplate.MatchProtocol("haveEnergy")));
@@ -49,7 +52,7 @@ public class CheckPower extends Behaviour {
             }
         }
         if (k==kR){
-            if (k==counter){
+            if (k==counter ){
                 flag = true;
             }
             doneB = true;
@@ -63,13 +66,16 @@ public class CheckPower extends Behaviour {
                 k2++;
             }
         }
-        if (flag||(k2==agent.getStateOfBreakers().size())){
-           // agent.addBehaviour();
+        if ((flag||(k2==agent.getStateOfBreakers().size()))&& !agent.isHaveEnergy()){
+            agent.addBehaviour(new WaitForAskPower(agent));
+            agent.addBehaviour(new AskForPower(agent));
             System.out.println("I'm "+ agent.getLocalName()+" need Power");
             agent.setNeedPower(true);
         }
-        else{
+        else {
             System.out.println("I'm "+ agent.getLocalName()+" don't need Power");
+            agent.addBehaviour(new WaitForAskPower(agent));
+
         }
         return super.onEnd();
     }

@@ -521,6 +521,11 @@
         <NamedIndividual IRI="#Line_4"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#breakerState"/>
+        <NamedIndividual IRI="#Br1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#state"/>
         <NamedIndividual IRI="#Br1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>

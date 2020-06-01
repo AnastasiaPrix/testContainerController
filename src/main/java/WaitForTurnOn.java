@@ -38,9 +38,9 @@ public class WaitForTurnOn extends Behaviour {
 //        for (Map.Entry m :agent.getStateOfBreakers().entrySet() ){
 //            System.out.println("Hello. My name is "+agent.getLocalName() +"  "+ m.getKey()+ "_ " +m.getValue());
 //        }
-        if (!agent.isHaveEnergy()) {
+      //  if (!agent.isHaveEnergy()) {
            agent.addBehaviour(new CheckPower(agent));
-        }
+     //   }
         return super.onEnd();
     }
 
