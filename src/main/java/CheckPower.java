@@ -67,10 +67,11 @@ public class CheckPower extends Behaviour {
             }
         }
         if ((flag||(k2==agent.getStateOfBreakers().size()))&& !agent.isHaveEnergy()){
+            agent.setNeedPower(true);
             agent.addBehaviour(new WaitForAskPower(agent));
             agent.addBehaviour(new AskForPower(agent));
             System.out.println("I'm "+ agent.getLocalName()+" need Power");
-            agent.setNeedPower(true);
+
         }
         else {
             System.out.println("I'm "+ agent.getLocalName()+" don't need Power");

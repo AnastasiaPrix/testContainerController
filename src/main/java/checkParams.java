@@ -20,7 +20,8 @@ public class checkParams extends OneShotBehaviour {
         String path = "src\\main\\resources\\";
         String file = "KZ1_vnutr";
         String file2 = "Normal";
-        if (agent.getLocalName().equals("TP_2")||agent.getLocalName().equals("TP_3")||agent.getLocalName().equals("RP_2")){
+      // if (agent.getLocalName().equals("TP_2")||agent.getLocalName().equals("TP_3")||agent.getLocalName().equals("RP_2")){
+       if (agent.getLocalName().equals("TP_2")||agent.getLocalName().equals("TP_3")||agent.getLocalName().equals("RP_2")||agent.getLocalName().equals("TP_1")){
             comtrade = new DataComtrade(path,file2);
         }
         else {
@@ -43,9 +44,9 @@ public class checkParams extends OneShotBehaviour {
             System.out.println("I'm "+ agent.getLocalName()+ " find KZ turn of ");
             agent.addBehaviour(new SendRequest(agent,null));
         }
-        else if (agent.getLocalName().contains("T")) {
+       // else if (agent.getLocalName().contains("T")) {
             agent.addBehaviour(new WaitForRequest(agent));
-        }
+        //}
         agent.addBehaviour(new WaitForTurnOn(agent));
        // agent.addBehaviour(new CheckPower(agent));
      //   agent.addBehaviour(new needPower(agent));

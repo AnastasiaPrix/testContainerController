@@ -4,19 +4,30 @@ import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
 
 public class SendInformationLocalization extends OneShotBehaviour {
-    private Agent agent;
+    private myAgent agent;
     private String name;
-    public SendInformationLocalization(Agent agent, String name) {
+    public SendInformationLocalization(myAgent agent, String name) {
         this.agent = agent;
         this.name = name;
     }
 
     @Override
     public void action() {
-        ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-        msg.setProtocol("findKZ");
-        msg.addReceiver(new AID(name,false));
-        agent.send(msg);
+        if (name!=null) {
+            ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
+            msg.setProtocol("findKZ");
+            msg.addReceiver(new AID(name, false));
+            agent.send(msg);
+        }
+        else {
+            ACLMessage msg2 = new ACLMessage(ACLMessage.CANCEL);
+            for (String s: agent.getListAgent()){
+                msg2.addReceiver(new AID(s,false));
+            }
+            agent.send(msg2);
+            agent.addBehaviour(new WaitForPowerRequest(agent));
+            agent.addBehaviour(new CheckPower(agent));
+        }
 
     }
 }

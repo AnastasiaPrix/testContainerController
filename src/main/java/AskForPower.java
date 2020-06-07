@@ -34,11 +34,13 @@ public class AskForPower extends Behaviour {
                 MessageTemplate.and(MessageTemplate.MatchPerformative(ACLMessage.ACCEPT_PROPOSAL),
                         MessageTemplate.MatchProtocol("sendPower")));
         ACLMessage msg = agent.receive(mt);
+
         if (msg!=null){
-            k++;
-            if (msg.getPerformative()== ACLMessage.ACCEPT_PROPOSAL){
-                counter++;
-            }
+                k++;
+                // System.out.println(agent.getLocalName()+ " have messege from " +msg.getSender() + " " + msg.getPerformative() + " " + kR + " "+ k);
+                if (msg.getPerformative() == ACLMessage.ACCEPT_PROPOSAL) {
+                    counter++;
+                }
         }
         if (k==kR){
             doneB = true;

@@ -523,12 +523,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#breakerState"/>
         <NamedIndividual IRI="#Br1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#state"/>
         <NamedIndividual IRI="#Br1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#state"/>

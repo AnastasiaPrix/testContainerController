@@ -42,7 +42,7 @@ public class startAgent extends Agent {
 
 
         try {
-            Thread.sleep(15000);
+            Thread.sleep(19000);
         } catch (InterruptedException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
